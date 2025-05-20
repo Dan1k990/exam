@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Совершенные: Тайны Плато-1 - BookReader</title>
+    <link rel="stylesheet" href="../bookreader.css">
+    <link rel="stylesheet" href="bookreader_book_page.css">
+</head>
+<body>
+
+<header>
+    <div class="logo"><a href="../index.html">BookReader</a></div>
+    <button class="theme-btn" onclick="toggleTheme()">Тема</button>
+</header>
+
+<div class="book-container">
+    <div class="book-content">
+        <div class="book-header">
+            <div class="book-cover">
+                <img src="../images/cover12.png" alt="Обложка книги Совершенные: Тайны Плато-1">
+            </div>
+            <div class="book-info">
+                <h1>Совершенные: Тайны Плато-1</h1>
+                <p class="book-meta">Автор: Андрей Жвалевский • Год: <span class="year-link" onclick="filterBy('year', '2020')">2020</span> • Страниц: 312</p>
+                
+                <div class="tags">
+                    <strong>Теги:</strong>
+                    <span onclick="filterBy('tag', 'Подростковое фэнтези')">Подростковое фэнтези</span>
+                    <span onclick="filterBy('tag', 'Приключения')">Приключения</span>
+                </div>
+                
+                <div class="description">
+                    <p>«Совершенные: Тайны Плато-1» — первая книга подростковой фэнтези-серии о мире, где дети растут в изоляции от взрослых. Главные герои живут на так называемом Плато-1 — научно-экспериментальной базе, окружённой запретной зоной и высоким уровнем контроля. Здесь нет родителей, взрослые — только наставники и ученые, а главная цель — воспитать совершенное поколение, свободное от эмоций и ошибок. Подростки, на первый взгляд, живут в утопическом обществе, где всё предусмотрено: еда, одежда, обучение.</p>
+                    <p>В книге много философских и моральных вопросов о свободе воли, контроле, взрослении, доверии и природе человеческих чувств. Повествование разворачивается динамично, поочерёдно от лица нескольких героев, что помогает глубже понять их внутренний мир и эмоции. Это произведение одновременно и фантастическое приключение, и социальная драма, затрагивающая важные темы для подростков и взрослых.</p>
+                </div>
+                
+                <div class="rating">
+                    <strong>Рейтинг:</strong>
+                    8.4
+                </div>
+                <div class="rating">
+                    <strong>Просмотры:</strong>
+                    2.1k
+                </div>
+            </div>
+        </div>
+        
+        <div class="chapter-selection">
+            <h3>Начните чтение</h3>
+            <div class="chapters">
+                <div class="chapter" onclick="readChapter('chapter1')">
+                    <h4>Глава 1. Никогда не разговаривайте с неизвестными</h4>
+                    <p>В жаркий весенний закат на Патриарших прудах появляются двое литераторов и загадочный иностранец.</p>
+                </div>
+                <div class="chapter" onclick="readChapter('chapter13')">
+                    <h4>Глава 13. Явление героя</h4>
+                    <p>Маргарита читает рукопись Мастера, а Иван Бездомный знакомится с таинственным соседом по клинике.</p>
+                </div>
+                <div class="chapter" onclick="readChapter('chapter32')">
+                    <h4>Глава 32. Прощение и вечный приют</h4>
+                    <p>Финал истории Мастера и Маргариты, где они получают свою награду.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="logo"><a href="../index.html">BookReader</a></div>
+    <div class="footer-links">
+        <a href="../diagramma.html">Диаграммы</a>
+        <a href="../bookreader_onas.html">О нас</a>
+        <a href="../bookreader_politic.html">Политика конфиденциальности</a>
+        <a href="../bookreader_sogla.html">Пользовательское соглашение</a>
+    </div>
+</footer>
+
+<script src="book_12.js"></script>
+
+</body>
+</html>

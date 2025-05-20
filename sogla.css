@@ -1,0 +1,94 @@
+
+/* Стили для страницы соглашения */
+.agreement-container {
+    max-width: 900px;
+    margin: 80px auto 40px;
+    padding: 0 20px;
+}
+
+.agreement-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.agreement-content {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    line-height: 1.6;
+    border: 1px solid var(--border-color); /* Добавленная граница */
+}
+
+/* Стили для красивой таблицы */
+.styled-table {
+    width: 100%;
+    border-collapse: separate; /* Изменено с collapse на separate */
+    border-spacing: 0;
+    margin: 25px 0;
+    font-size: 0.9em;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.styled-table thead tr {
+    background-color: var(--primary-color);
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+}
+
+/* Скругление углов для первой и последней ячейки заголовка */
+.styled-table thead tr th:first-child {
+    border-top-left-radius: 10px;
+}
+.styled-table thead tr th:last-child {
+    border-top-right-radius: 10px;
+}
+
+/* Скругление углов для последней строки */
+.styled-table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+.styled-table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: var(--table-even-bg);
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.styled-table tbody tr:hover {
+    background-color: var(--table-hover-bg);
+    transition: all 0.2s;
+}
+
+/* Адаптивность таблицы */
+@media (max-width: 768px) {
+    .styled-table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+/* Цвета границ в зависимости от темы */
+:root {
+    --border-color: #dddddd; /* Светлая тема */
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --border-color: #444444; /* Темная тема */
+    }
+}

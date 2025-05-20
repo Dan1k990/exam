@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тайна мёртвого ректора - BookReader</title>
+    <link rel="stylesheet" href="../bookreader.css">
+    <link rel="stylesheet" href="bookreader_book_page.css">
+</head>
+<body>
+
+<header>
+    <div class="logo"><a href="../index.html">BookReader</a></div>
+    <button class="theme-btn" onclick="toggleTheme()">Тема</button>
+</header>
+
+<div class="book-container">
+    <div class="book-content">
+        <div class="book-header">
+            <div class="book-cover">
+                <img src="../images/cover9.png" alt="Обложка книги Тайна мёртвого ректора">
+            </div>
+            <div class="book-info">
+                <h1>Тайна мёртвого ректора</h1>
+                <p class="book-meta">Автор: Виктор Дашкевич • Год: <span class="year-link" onclick="filterBy('year', '2023')">2023</span> • Страниц: 412</p>
+                
+                <div class="tags">
+                    <strong>Теги:</strong>
+                    <span onclick="filterBy('tag', 'Фэнтези')">Фэнтези</span>
+                    <span onclick="filterBy('tag', 'Интрига')">Интрига</span>
+                </div>
+                
+                <div class="description">
+                    <p>В четвёртой книге цикла «Колдун Российской империи» граф Аверин и Кузя поступают на службу в Управление после кровопролитной битвы.</p>
+                    <p>Однако спокойствие длится недолго: в московской колдовской Академии при загадочных обстоятельствах погибает ректор, а на свободе оказывается могущественный див. Аверин берётся за расследование, сталкиваясь с тайнами, которые могут изменить судьбу империи.</p>
+                </div>
+                
+                <div class="rating">
+                    <strong>Рейтинг:</strong>
+                    8.6
+                </div>
+                <div class="rating">
+                    <strong>Просмотры:</strong>
+                    2.9k
+                </div>
+            </div>
+        </div>
+        
+        <div class="chapter-selection">
+            <h3>Начните чтение</h3>
+            <div class="chapters">
+                <div class="chapter" onclick="readChapter('chapter1')">
+                    <h4>Глава 1. Никогда не разговаривайте с неизвестными</h4>
+                    <p>В жаркий весенний закат на Патриарших прудах появляются двое литераторов и загадочный иностранец.</p>
+                </div>
+                <div class="chapter" onclick="readChapter('chapter13')">
+                    <h4>Глава 13. Явление героя</h4>
+                    <p>Маргарита читает рукопись Мастера, а Иван Бездомный знакомится с таинственным соседом по клинике.</p>
+                </div>
+                <div class="chapter" onclick="readChapter('chapter32')">
+                    <h4>Глава 32. Прощение и вечный приют</h4>
+                    <p>Финал истории Мастера и Маргариты, где они получают свою награду.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="logo"><a href="../index.html">BookReader</a></div>
+    <div class="footer-links">
+        <a href="../diagramma.html">Диаграммы</a>
+        <a href="../bookreader_onas.html">О нас</a>
+        <a href="../bookreader_politic.html">Политика конфиденциальности</a>
+        <a href="../bookreader_sogla.html">Пользовательское соглашение</a>
+    </div>
+</footer>
+
+<script src="book_9.js"></script>
+
+</body>
+</html>

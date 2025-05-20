@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookReader — Онлайн Библиотека</title>
+    <link rel="stylesheet" href="bookreader.css">
+    <link rel="stylesheet" href="bookreader_dark.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <span class="logo-full"><a href="index.html">BookReader</a></span>
+        <span class="logo-short"><a href="index.html">BR</a></span>
+    </div>
+    <button class="catalog-btn"><a href="bookreader_catalog.html">Каталог</a></button>
+    <div class="search-box">
+        <input type="text" placeholder="Поиск книг...">
+        <div class="search-icon"></div>
+    </div>
+    
+    <button class="theme-btn" onclick="toggleTheme()">Тема</button>
+    <div class="auth-status" id="authStatus"></div>
+    <div class="search-results" id="searchResults"></div>
+</header>
+
+
+<div class="container">
+
+    <div class="intro">
+        <div class="intro-text">
+            <h1>BookReader — твоя онлайн-библиотека</h1>
+            <p>Читай лучшие книги со всего мира в удобном формате онлайн бесплатно. У нас есть классика, современные бестселлеры и уникальные произведения со всех уголков планеты.</p>
+        </div>
+        <div class="intro-placeholder"><img src="images/sourse1.png"></div>
+    </div>
+
+    <div class="book-section">
+        <h2>Популярные книги</h2>
+        <div class="book-list">
+            <div class="book-card"><a href="books/bookreader_book1_page.html"><img src="images/cover1.png"><div class="book-info">Мастер и Маргарита<div class="country">Магия, мистика и любовь в сердце Москвы</div></div></a></div>
+            <div class="book-card"><a href="books/bookreader_book2_page.html"><img src="images/cover2.png"><div class="book-info">Гордость и предубеждение<div class="country">Классика романтической литературы о поиске счастья</div></div></a></div>
+            <div class="book-card"><a href="books/bookreader_book3_page.html"><img src="images/cover3.png"><div class="book-info">1984<div class="country">Антиутопия о тоталитарном обществе и борьбе за свободу</div></div></a></div>
+            <div class="book-card"><a href="books/bookreader_book4_page.html"><img src="images/cover4.png"><div class="book-info">Унесённые ветром<div class="country">Эпическая история любви на фоне Гражданской войны в США</div></div></a></div>
+            <div class="book-card"><a href="books/bookreader_book5_page.html"><img src="images/cover5.png"><div class="book-info">Алхимик<div class="country">Философская притча о мечте и судьбе</div></div></a></div>
+        </div>
+    </div>
+
+    <div class="book-section">
+        <h2>Новинки</h2>
+        <p>Свежие поступления — будь в курсе новинок!</p>
+        <div class="book-list">
+            <div class="book-card"><a href="books/bookreader_book6_page.html"><img src="images/cover6.png"><div class="book-info">Граф Аверин<div class="country">Магия и дворцовые тайны в сердце Российской Империи</div></div></a></div>
+            <div class="book-card"><a href="books/bookreader_book7_page.html"><img src="images/cover7.png"><div class="book-info">Императорский Див<div class="country">Опасное задание во Франции: тайны императорского двора и магии</div></div></a></div>
+            <div class="book-card"><a href="books/bookreader_book8_page.html"><img src="images/cover8.png"><div class="book-info">Демон из пустоши<div class="country">Мистическое расследование и борьба с древним злом в Японии</div></div></a></div>
+            <div class="book-card"><a href="books/bookreader_book9_page.html"><img src="images/cover9.png"><div class="book-info">Тайна мертвого ректора<div class="country">Заговор, убийство и магия в Поднебесной империи</div></div></a></div>
+            <div class="book-card"><a href="books/bookreader_book10_page.html"><img src="images/cover10.png"><div class="book-info">Матабар<div class="country">Апокалиптическое фэнтези с магами и древними силами в США</div></div></a></div>
+        </div>
+    </div>
+
+    <div class="book-section">
+        <h2>Топ романов</h2>
+        <p>Самые читаемые и любимые романы.</p>
+        <div class="book-list">
+            <div class="book-card"><a href="books/bookreader_book11_page.html"><img src="images/cover11.png"><div class="book-info">Дизайнер Нью-Йорка<div class="country">Жизнь, любовь и искусство сквозь призму эмиграции и личной драмы</div></div></a></div>
+            <div class="book-card"><a href="books/bookreader_book12_page.html"><img src="images/cover12.png"><div class="book-info">Совершенные: Тайны Плато<div class="country">Фэнтези о сильной героине, скрывающей в себе силу, способную изменить мир</div></div></a></div>
+            <div class="book-card"><a href="books/bookreader_book13_page.html"><img src="images/cover13.png"><div class="book-info">Эффект Розенталя<div class="country">Фантастика с элементами детектива, где случайная встреча меняет реальность</div></div></a></div>
+            <div class="book-card"><a href="books/bookreader_book14_page.html"><img src="images/cover14.png"><div class="book-info">Кафе на краю земли<div class="country">Философская притча о смысле жизни, мечтах и выборе своего пути</div></div></a></div>
+            <div class="book-card"><a href="books/bookreader_book15_page.html"><img src="images/cover15.png"><div class="book-info">Совершенные: Монстр должен умереть<div class="country">Продолжение захватывающей истории — битва за правду и справедливость</div></div></a></div>
+        </div>
+    </div>
+
+    <div class="book-section">
+        <h2>Топ детских сказок</h2>
+        <p>Лучшие сказки для самых маленьких читателей.</p>
+        <div class="book-list">
+            <div class="book-card"><a href="books/bookreader_book16_page.html"><img src="images/cover16.png"><div class="book-info">Алексей Ребезов – Детские сказки<div class="country">Волшебные истории о доброте, чудесах и приключениях для малышей</div></div></a></div>
+            <div class="book-card"><a href="books/bookreader_book17_page.html"><img src="images/cover17.png"><div class="book-info">Русские народные сказки<div class="country">Классические сказки, знакомые каждому с детства, в красочном исполнении</div></div></a></div>
+            <div class="book-card"><a href="books/bookreader_book18_page.html"><img src="images/cover18.png"><div class="book-info">Ходячий замок<div class="country">Классические сказки, знакомые каждому с детства, в красочном исполнении</div></div></a></div>
+            <div class="book-card"><a href="books/bookreader_book19_page.html"><img src="images/cover19.png"><div class="book-info">Маленький принц<div class="country">Философская история о детской мудрости и красоте человеческих чувств</div></div></a></div>
+            <div class="book-card"><a href="books/bookreader_book20_page.html"><img src="images/cover20.png"><div class="book-info">Приключения Незнайки и его друзей<div class="country">Весёлые и поучительные приключения маленьких человечков в сказочном городе</div></div></a></div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="logo"><a href="index.html">BookReader</a></div>
+    <div class="footer-links">
+	<a href="diagramma.html">Диаграммы</a>
+        <a href="bookreader_onas.html">О нас</a>
+        <a href="bookreader_politic.html">Политика конфиденциальности</a>
+        <a href="bookreader_sogla.html">Пользовательское соглашение</a>
+    </div>
+</footer>
+
+<script src="theme.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

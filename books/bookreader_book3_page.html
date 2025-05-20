@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1984 - BookReader</title>
+    <link rel="stylesheet" href="../bookreader.css">
+    <link rel="stylesheet" href="bookreader_book_page.css">
+</head>
+<body>
+
+<header>
+    <div class="logo"><a href="../index.html">BookReader</a></div>
+    <button class="theme-btn" onclick="toggleTheme()">Тема</button>
+</header>
+
+<div class="book-container">
+    <div class="book-content">
+        <div class="book-header">
+            <div class="book-cover">
+                <img src="../images/cover3.png" alt="Обложка книги 1984">
+            </div>
+            <div class="book-info">
+                <h1>1984</h1>
+                <p class="book-meta">Автор: Джордж Оруэлл • Год: <span class="year-link" onclick="filterBy('year', '1949')">1949</span> • Страниц: 390</p>
+                
+                <div class="tags">
+                    <strong>Теги:</strong>
+                    <span onclick="filterBy('tag', 'Антиутопия')">Антиутопия</span>
+                    <span onclick="filterBy('tag', 'Политика')">Политика</span>
+                    <span onclick="filterBy('tag', 'Фантастика')">Фантастика</span>
+                </div>
+                
+                <div class="description">
+                    <p>Роман-антиутопия «1984» — одно из самых мощных политических и философских произведений XX века, написанное Джорджем Оруэллом в 1948 году. В центре сюжета — тоталитарное государство Океания, где правит Партия во главе с Большим Братом. Граждане этого мира живут под постоянным наблюдением, их сознание контролируется, а язык и правда искажаются ради сохранения власти.</p>
+                    <p>Главный герой — Уинстон Смит, простой служащий Министерства Правды, занимается тем, что переписывает прошлое в угоду режиму. Он начинает сомневаться в правомерности системы и пытается бунтовать: сначала мысленно, потом — вступая в запрещённую любовную связь с Джулией. Однако в мире, где даже мысль против режима — преступление («мыслепреступление»), невозможно ускользнуть от тотального контроля.</p>
+                </div>
+                
+                <div class="rating">
+                    <strong>Рейтинг:</strong>
+                    9.4
+                </div>
+                <div class="rating">
+                    <strong>Просмотры:</strong>
+                    6.7k
+                </div>
+            </div>
+        </div>
+        
+        <div class="chapter-selection">
+            <h3>Начните чтение</h3>
+            <div class="chapters">
+                <div class="chapter" onclick="readChapter('chapter1')">
+                    <h4>Глава 7: Комната без времени</h4>
+                    <p>Комната пахла пылью, старым деревом и чем-то сладким, едва уловимым — возможно, это был запах воспоминаний.</p>
+                </div>
+                <div class="chapter" onclick="readChapter('chapter13')">
+                    <h4>Глава 14: Прах памяти</h4>
+                    <p>Маргарита читает рукопись Мастера, а Иван Бездомный знакомится с таинственным соседом по клинике.</p>
+                </div>
+                <div class="chapter" onclick="readChapter('chapter32')">
+                    <h4>Глава 21: Уроки боли</h4>
+                    <p>Финал истории Мастера и Маргариты, где они получают свою награду.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="logo"><a href="../index.html">BookReader</a></div>
+    <div class="footer-links">
+        <a href="../diagramma.html">Диаграммы</a>
+        <a href="../bookreader_onas.html">О нас</a>
+        <a href="../bookreader_politic.html">Политика конфиденциальности</a>
+        <a href="../bookreader_sogla.html">Пользовательское соглашение</a>
+    </div>
+</footer>
+
+<script src="book_3.js"></script>
+
+</body>
+</html>

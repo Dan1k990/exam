@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гордость и предубеждение - BookReader</title>
+    <link rel="stylesheet" href="../bookreader.css">
+    <link rel="stylesheet" href="bookreader_book_page.css">
+</head>
+<body>
+
+<header>
+    <div class="logo"><a href="../index.html">BookReader</a></div>
+    <button class="theme-btn" onclick="toggleTheme()">Тема</button>
+</header>
+
+<div class="book-container">
+    <div class="book-content">
+        <div class="book-header">
+            <div class="book-cover">
+                <img src="../images/cover2.png" alt="Обложка книги Мастер и Маргарита">
+            </div>
+            <div class="book-info">
+                <h1>Гордость и предубеждение</h1>
+                <p class="book-meta">Автор: Джейн Остин • Год: <span class="year-link" onclick="filterBy('year', '1813')">1813</span> • Страниц: 410</p>
+                
+                <div class="tags">
+                    <strong>Теги:</strong>
+                    <span onclick="filterBy('tag', 'Роман')">Роман</span>
+                </div>
+                
+                <div class="description">
+                    <p>Роман «Гордость и предубеждение» — одно из самых известных произведений английской писательницы Джейн Остин, впервые опубликованное в 1813 году. Эта книга — не просто любовная история, а остроумное и тонкое исследование нравов и социальных устоев английского общества конца XVIII — начала XIX века. Основная линия сюжета разворачивается вокруг Элизабет Беннет — умной, независимой и проницательной молодой женщины — и мистера Дарси, человека сдержанного, но глубокого характера.</p>
+                    <p>На первый взгляд кажется, что между Элизабет и Дарси не может быть ничего общего: она считает его высокомерным и холодным, а он — её семью вульгарной и недостойной. Однако в процессе развития событий герои меняются, их взгляды эволюционируют, и в этом — главная сила романа. Остин мастерски демонстрирует, как внешняя "гордость" и "предубеждение" могут помешать людям увидеть друг в друге настоящую ценность.</p>
+                </div>
+                
+                <div class="rating">
+                    <strong>Рейтинг:</strong>
+                    9.2
+                </div>
+                <div class="rating">
+                    <strong>Просмотры:</strong>
+                    2.3k
+                </div>
+            </div>
+        </div>
+        
+        <div class="chapter-selection">
+            <h3>Начните чтение</h3>
+            <div class="chapters">
+                <div class="chapter" onclick="readChapter('chapter1')">
+                    <h4>Глава 3: Вечеринка в Меритоне</h4>
+                    <p>В этой главе мистер Бингли впервые появляется в обществе, вызвав интерес всех дам, особенно мисс Беннет.</p>
+                </div>
+                <div class="chapter" onclick="readChapter('chapter13')">
+                    <h4>Глава 34: Признание мистера Дарси</h4>
+                    <p>Мистер Дарси признаётся Элизабет в любви, но делает это высокомерно и пренебрежительно, что вызывает её гнев.</p>
+                </div>
+                <div class="chapter" onclick="readChapter('chapter32')">
+                    <h4>Глава 58: Согласие Элизабет</h4>
+                    <p>Финальное объяснение между Дарси и Элизабет, в котором она признаётся ему в ответных чувствах.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="logo"><a href="../index.html">BookReader</a></div>
+    <div class="footer-links">
+        <a href="../diagramma.html">Диаграммы</a>
+        <a href="../bookreader_onas.html">О нас</a>
+        <a href="../bookreader_politic.html">Политика конфиденциальности</a>
+        <a href="../bookreader_sogla.html">Пользовательское соглашение</a>
+    </div>
+</footer>
+
+<script src="book_2.js"></script>
+
+</body>
+</html>

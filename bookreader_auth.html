@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация - BookReader</title>
+    <link rel="stylesheet" href="bookreader_auth.css">
+</head>
+<body>
+
+<header>
+    <div class="logo"><a href="index.html">BookReader</a></div>
+    <button class="theme-btn" onclick="toggleTheme()">Тема</button>
+</header>
+
+<div class="container">
+    <div class="form-box">
+        <h1>Регистрация</h1>
+        <form action="#" onsubmit="return validateForm(event)" id="registerForm">
+            <div class="form-group">
+                <label for="name">Ваше имя</label>
+                <input type="text" id="name" placeholder="Введите ваше имя" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Электронная почта</label>
+                <input type="email" id="email" placeholder="Введите вашу почту" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" placeholder="Придумайте пароль" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Зарегистрироваться</button>
+            </div>
+        </form>
+        <div class="form-footer">
+            Уже есть аккаунт? <a href="bookreader_log.html">Войти</a>
+        </div>
+    </div>
+</div>
+<script src="theme.js"></script>
+<script src="auth.js"></script>
+
+</body>
+</html>

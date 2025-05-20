@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Совершенные: Монстр должен умереть - BookReader</title>
+    <link rel="stylesheet" href="../bookreader.css">
+    <link rel="stylesheet" href="bookreader_book_page.css">
+</head>
+<body>
+
+<header>
+    <div class="logo"><a href="../index.html">BookReader</a></div>
+    <button class="theme-btn" onclick="toggleTheme()">Тема</button>
+</header>
+
+<div class="book-container">
+    <div class="book-content">
+        <div class="book-header">
+            <div class="book-cover">
+                <img src="../images/cover15.png" alt="Обложка книги Совершенные: Монстр должен умереть">
+            </div>
+            <div class="book-info">
+                <h1>Совершенные: Монстр должен умереть</h1>
+                <p class="book-meta">Автор: Андрей Жвалевский • Год: <span class="year-link" onclick="filterBy('year', '2022')">2022</span> • Страниц: 430</p>
+                
+                <div class="tags">
+                    <strong>Теги:</strong>
+                    <span onclick="filterBy('tag', 'Подростковое фэнтези')">Подростковое фэнтези</span>
+                    <span onclick="filterBy('tag', 'Экшен')">Экшен</span>
+                </div>
+                
+                <div class="description">
+                    <p>«Совершенные: Монстр должен умереть» — вторая книга серии о Плато, где подростки воспитываются без взрослых в строго контролируемой среде. В отличие от первой части, здесь атмосфера становится напряжённее: начинаются конфликты, проявляются скрытые страхи, а у героев формируется критическое отношение к системе. В центре сюжета — миссия по устранению условного «монстра», который угрожает их безопасности.</p>
+                    <p>Однако вопрос, кто или что этот монстр, оказывается не таким простым. Повествование заставляет задуматься: монстр — это внешний враг или то, что прячется внутри нас самих? Темы взросления, доверия, личного выбора и моральных границ выходят на первый план. Книга умело сочетает элементы экшена и философии: с одной стороны, это динамичное подростковое приключение, с другой — глубокая аллегория о природе добра и зла. Герои становятся старше, опытнее и эмоционально сложнее.</p>
+                </div>
+                
+                <div class="rating">
+                    <strong>Рейтинг:</strong>
+                    8.5
+                </div>
+                <div class="rating">
+                    <strong>Просмотры:</strong>
+                    2.2k
+                </div>
+            </div>
+        </div>
+        
+        <div class="chapter-selection">
+            <h3>Начните чтение</h3>
+            <div class="chapters">
+                <div class="chapter" onclick="readChapter('chapter1')">
+                    <h4>Глава 1. Никогда не разговаривайте с неизвестными</h4>
+                    <p>В жаркий весенний закат на Патриарших прудах появляются двое литераторов и загадочный иностранец.</p>
+                </div>
+                <div class="chapter" onclick="readChapter('chapter13')">
+                    <h4>Глава 13. Явление героя</h4>
+                    <p>Маргарита читает рукопись Мастера, а Иван Бездомный знакомится с таинственным соседом по клинике.</p>
+                </div>
+                <div class="chapter" onclick="readChapter('chapter32')">
+                    <h4>Глава 32. Прощение и вечный приют</h4>
+                    <p>Финал истории Мастера и Маргариты, где они получают свою награду.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="logo"><a href="../index.html">BookReader</a></div>
+    <div class="footer-links">
+        <a href="../diagramma.html">Диаграммы</a>
+        <a href="../bookreader_onas.html">О нас</a>
+        <a href="../bookreader_politic.html">Политика конфиденциальности</a>
+        <a href="../bookreader_sogla.html">Пользовательское соглашение</a>
+    </div>
+</footer>
+
+<script src="book_15.js"></script>
+
+</body>
+</html>

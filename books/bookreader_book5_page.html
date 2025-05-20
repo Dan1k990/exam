@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алхимик - BookReader</title>
+    <link rel="stylesheet" href="../bookreader.css">
+    <link rel="stylesheet" href="bookreader_book_page.css">
+</head>
+<body>
+
+<header>
+    <div class="logo"><a href="../index.html">BookReader</a></div>
+    <button class="theme-btn" onclick="toggleTheme()">Тема</button>
+</header>
+
+<div class="book-container">
+    <div class="book-content">
+        <div class="book-header">
+            <div class="book-cover">
+                <img src="../images/cover5.png" alt="Обложка книги Алхимик">
+            </div>
+            <div class="book-info">
+                <h1>Алхимик</h1>
+                <p class="book-meta">Автор: Пауло Коэльо • Год: <span class="year-link" onclick="filterBy('year', '1988')">1988</span> • Страниц: 483</p>
+                
+                <div class="tags">
+                    <strong>Теги:</strong>
+                    <span onclick="filterBy('tag', 'Притча')">Притча</span>
+                    <span onclick="filterBy('tag', 'Саморазвитие')">Саморазвитие</span>
+                </div>
+                
+                <div class="description">
+                    <p>«Алхимик» — философская притча бразильского писателя Пауло Коэльо, впервые опубликованная в 1988 году. Это книга о путешествии, предназначении, поиске себя и силы мечты. Главный герой — юный пастух Сантьяго из Андалусии, который решает покинуть родные края, чтобы отправиться в Египет на поиски сокровища, о котором ему рассказал сон.</p>
+                    <p>На своём пути Сантьяго встречает множество персонажей: старого короля Мелхиседека, английского алхимика, девушку Фатиму, караванщиков, торговцев и, наконец, великого Алхимика, каждый из которых помогает ему осознать смысл истинного пути. Постепенно Сантьяго понимает, что сокровище — это не только золото, а сам путь, само развитие, понимание своего «Личного Предназначения».</p>
+                </div>
+                
+                <div class="rating">
+                    <strong>Рейтинг:</strong>
+                    8.6
+                </div>
+                <div class="rating">
+                    <strong>Просмотры:</strong>
+                    4.9k
+                </div>
+            </div>
+        </div>
+        
+        <div class="chapter-selection">
+            <h3>Начните чтение</h3>
+            <div class="chapters">
+                <div class="chapter" onclick="readChapter('chapter1')">
+                    <h4>Глава 1. Никогда не разговаривайте с неизвестными</h4>
+                    <p>В жаркий весенний закат на Патриарших прудах появляются двое литераторов и загадочный иностранец.</p>
+                </div>
+                <div class="chapter" onclick="readChapter('chapter13')">
+                    <h4>Глава 13. Явление героя</h4>
+                    <p>Маргарита читает рукопись Мастера, а Иван Бездомный знакомится с таинственным соседом по клинике.</p>
+                </div>
+                <div class="chapter" onclick="readChapter('chapter32')">
+                    <h4>Глава 32. Прощение и вечный приют</h4>
+                    <p>Финал истории Мастера и Маргариты, где они получают свою награду.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="logo"><a href="../index.html">BookReader</a></div>
+    <div class="footer-links">
+        <a href="../diagramma.html">Диаграммы</a>
+        <a href="../bookreader_onas.html">О нас</a>
+        <a href="../bookreader_politic.html">Политика конфиденциальности</a>
+        <a href="../bookreader_sogla.html">Пользовательское соглашение</a>
+    </div>
+</footer>
+
+<script src="book_5.js"></script>
+
+</body>
+</html>

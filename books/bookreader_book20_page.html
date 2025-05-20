@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приключения Незнайки и его друзей - BookReader</title>
+    <link rel="stylesheet" href="../bookreader.css">
+    <link rel="stylesheet" href="bookreader_book_page.css">
+</head>
+<body>
+
+<header>
+    <div class="logo"><a href="../index.html">BookReader</a></div>
+    <button class="theme-btn" onclick="toggleTheme()">Тема</button>
+</header>
+
+<div class="book-container">
+    <div class="book-content">
+        <div class="book-header">
+            <div class="book-cover">
+                <img src="../images/cover20.png" alt="Обложка книги Приключения Незнайки и его друзей">
+            </div>
+            <div class="book-info">
+                <h1>Приключения Незнайки и его друзей</h1>
+                <p class="book-meta">Автор: Николай Носов • Год: <span class="year-link" onclick="filterBy('year', '1954')">1954</span> • Страниц: 323</p>
+                
+                <div class="tags">
+                    <strong>Теги:</strong>
+                    <span onclick="filterBy('tag', 'Детская литература')">Детская литература</span>
+                    <span onclick="filterBy('tag', 'Юмор')">Юмор</span>
+                    <span onclick="filterBy('tag', 'Дружба')">Дружба</span>
+                </div>
+                
+                <div class="description">
+                    <p>«Приключения Незнайки и его друзей» — классическое произведение советской детской литературы, созданное писателем Николаем Носовым. Главный герой — весёлый, но ленивый и невежественный коротышка по имени Незнайка, живущий в Цветочном городе вместе со своими друзьями: Знайкой, Винтиком, Шпунтиком, Гусляром и другими яркими персонажами.</p>
+                    <p>Несмотря на свою невнимательность и склонность к выдумкам, Незнайка часто оказывается в центре событий, которые приводят к курьёзным, но поучительным ситуациям. Книга наполнена юмором, теплотой и живыми диалогами, но при этом несёт важную воспитательную функцию — показывает ценность знаний, дружбы, честности и труда.</p>
+                </div>
+                
+                <div class="rating">
+                    <strong>Рейтинг:</strong>
+                    9.2
+                </div>
+                <div class="rating">
+                    <strong>Просмотры:</strong>
+                    5.2k
+                </div>
+            </div>
+        </div>
+        
+        <div class="chapter-selection">
+            <h3>Начните чтение</h3>
+            <div class="chapters">
+                <div class="chapter" onclick="readChapter('chapter1')">
+                    <h4>Глава 1. Никогда не разговаривайте с неизвестными</h4>
+                    <p>В жаркий весенний закат на Патриарших прудах появляются двое литераторов и загадочный иностранец.</p>
+                </div>
+                <div class="chapter" onclick="readChapter('chapter13')">
+                    <h4>Глава 13. Явление героя</h4>
+                    <p>Маргарита читает рукопись Мастера, а Иван Бездомный знакомится с таинственным соседом по клинике.</p>
+                </div>
+                <div class="chapter" onclick="readChapter('chapter32')">
+                    <h4>Глава 32. Прощение и вечный приют</h4>
+                    <p>Финал истории Мастера и Маргариты, где они получают свою награду.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="logo"><a href="../index.html">BookReader</a></div>
+    <div class="footer-links">
+        <a href="../diagramma.html">Диаграммы</a>
+        <a href="../bookreader_onas.html">О нас</a>
+        <a href="../bookreader_politic.html">Политика конфиденциальности</a>
+        <a href="../bookreader_sogla.html">Пользовательское соглашение</a>
+    </div>
+</footer>
+
+<script src="book_20.js"></script>
+
+</body>
+</html>

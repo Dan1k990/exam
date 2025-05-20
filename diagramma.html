@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Диаграммы Chart.js</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+    <div class="logo"><a href="index.html">BookReader</a></div>
+    <button class="theme-btn" onclick="toggleTheme()">Тема</button>
+</header>
+
+    <main class="container">
+        <section class="intro">
+            <div class="intro-text">
+                <h1>Анализ активности и предпочтений</h1>
+                <p>Диаграммы, построенные с помощью библиотеки Chart.js</p>
+            </div>
+            <div class="intro-placeholder"><img src="images/sourse2.png"></div>
+        </section>
+
+        <section class="book-section">
+            <h2>Линейная диаграмма</h2>
+            <canvas id="lineChart"></canvas>
+        </section>
+
+        <section class="book-section">
+            <h2>Полярная диаграмма</h2>
+            <canvas id="polarChart"></canvas>
+        </section>
+    </main>
+
+<footer>
+    <div class="logo"><a href="index.html">BookReader</a></div>
+    <div class="footer-links">
+	<a href="diagramma.html">Диаграммы</a>
+        <a href="bookreader_onas.html">О нас</a>
+        <a href="bookreader_politic.html">Политика конфиденциальности</a>
+        <a href="bookreader_sogla.html">Пользовательское соглашение</a>
+    </div>
+</footer>
+    <script src="theme.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

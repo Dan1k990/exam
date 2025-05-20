@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О проекте BookReader</title>
+    <link rel="stylesheet" href="bookreader.css">
+    <link rel="stylesheet" href="onas.css">
+</head>
+<body>
+
+<header>
+    <div class="logo"><a href="index.html">BookReader</a></div>
+    <button class="theme-btn" onclick="toggleTheme()">Тема</button>
+</header>
+
+<div class="about-container">
+    <div class="about-header">
+        <h1>О проекте BookReader</h1>
+        <p>Современная платформа для любителей чтения</p>
+    </div>
+    
+    <div class="about-content">
+        <section>
+            <h2>Наша миссия</h2>
+            <p>BookReader создан для того, чтобы сделать чтение доступным и удобным для каждого. Мы объединяем читателей и авторов, предоставляя современные инструменты для чтения и публикации произведений.</p>
+            
+            <div class="gallery">
+                <div class="gallery-item" onclick="openModal('img/read1.png', 'Инновационное пространство, где каждая книга доступна в один клик')">
+                    <img src="img/read1.png" alt="Современная библиотека будущего" class="gallery-img">
+                    <div class="gallery-caption">Современная библиотека будущего</div>
+                </div>
+                <div class="gallery-item" onclick="openModal('img/read2.png', 'Тысячи историй, готовых ожить в вашем электронном устройстве')">
+                    <img src="img/read2.png" alt="Мудрость, собранная по страницам" class="gallery-img">
+                    <div class="gallery-caption">Мудрость, собранная по страницам</div>
+                </div>
+                <div class="gallery-item" onclick="openModal('img/read3.png', 'Тысячи историй, готовых ожить в вашем электронном устройстве')">
+                    <img src="img/read3.png" alt="Рабочая зона авторов и редакторов" class="gallery-img">
+                    <div class="gallery-caption">Рабочая зона авторов и редакторов</div>
+                </div>
+                <div class="gallery-item" onclick="openModal('img/read4.png', 'Наша цифровая коллекция — как нескончаемый книжный зал, всегда под рукой')">
+                    <img src="img/read4.png" alt="Открытая библеотека" class="gallery-img">
+                    <div class="gallery-caption">Открытая библеотека</div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Наша история</h2>
+            <p>BookReader начался в 2025 году как небольшой студенческий проект. Сегодня это одна из самых популярных платформ для чтения в Казахстане с аудиторией более 500 000 пользователей.</p>
+            
+            <div class="gallery">
+                <div class="gallery-item" onclick="openModal('img/read5.png', 'Тишина, уют и доступ к тысячам книг — идеальные условия для глубокого погружения в текст')">
+                    <img src="img/read5.png" alt="Просторное читальное пространство" class="gallery-img">
+                    <div class="gallery-caption">Просторное читальное пространство</div>
+                </div>
+                <div class="gallery-item" onclick="openModal('img/read6.png', 'Каждая стопка — это сотни голосов, историй и открытий, ждущих своего читателя')">
+                    <img src="img/read6.png" alt="Горы непрочитанного вдохновения" class="gallery-img">
+                    <div class="gallery-caption">Горы непрочитанного вдохновения</div>
+                </div>
+                <div class="gallery-item" onclick="openModal('img/read7.png', 'Здесь технологии помогают авторам делиться идеями с миром')">
+                    <img src="img/read7.png" alt="Центр цифрового книгоиздания" class="gallery-img">
+                    <div class="gallery-caption">Центр цифрового книгоиздания</div>
+                </div>
+                <div class="gallery-item" onclick="openModal('img/read8.png', 'Безграничные полки и мгновенный доступ к литературе со всего света')">
+                    <img src="img/read8.png" alt="Электронная библиотека нового поколения" class="gallery-img">
+                    <div class="gallery-caption">Электронная библиотека нового поколения</div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Наша команда</h2>
+            <p>BookReader - это команда энтузиастов, которые верят в силу чтения и современных технологий.</p>
+            
+            <div class="team">
+                <div class="team-member">
+                    <img src="img/team1.png" alt="Данияр" class="team-photo">
+                    <h3>Мингазин Данияр</h3>
+                    <p>Основатель, CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="img/team2.png" alt="Жаслан" class="team-photo">
+                    <h3>Кажагопанов Жаслан</h3>
+                    <p>Главный редактор</p>
+                </div>
+                <div class="team-member">
+                    <img src="img/team3.png" alt="Шерхан" class="team-photo">
+                    <h3>Женис Шерхан</h3>
+                    <p>Lead Developer</p>
+                </div>
+                <div class="team-member">
+                    <img src="img/team4.png" alt="Айнур" class="team-photo">
+                    <h3>Мукашева Айнур</h3>
+                    <p>Дизайнер UX/UI</p>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+</div>
+
+<!-- Модальное окно для галереи -->
+<div id="galleryModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="modalCaption" class="modal-caption"></div>
+</div>
+
+<footer>
+    <div class="logo"><a href="index.html">BookReader</a></div>
+    <div class="footer-links">
+	<a href="diagramma.html">Диаграммы</a>
+        <a href="bookreader_onas.html">О нас</a>
+        <a href="bookreader_politic.html">Политика конфиденциальности</a>
+        <a href="bookreader_sogla.html">Пользовательское соглашение</a>
+    </div>
+</footer>
+
+<script src="theme.js"></script>
+<script src="onas.js"></script>
+
+</body>
+</html>

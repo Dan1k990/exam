@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Унесённые ветром - BookReader</title>
+    <link rel="stylesheet" href="../bookreader.css">
+    <link rel="stylesheet" href="bookreader_book_page.css">
+</head>
+<body>
+
+<header>
+    <div class="logo"><a href="../index.html">BookReader</a></div>
+    <button class="theme-btn" onclick="toggleTheme()">Тема</button>
+</header>
+
+<div class="book-container">
+    <div class="book-content">
+        <div class="book-header">
+            <div class="book-cover">
+                <img src="../images/cover4.png" alt="Обложка книги Унесённые ветром">
+            </div>
+            <div class="book-info">
+                <h1>Унесённые ветром</h1>
+                <p class="book-meta">Автор: Маргарет Митчелл • Год: <span class="year-link" onclick="filterBy('year', '1936')">1936</span> • Страниц: 411</p>
+                
+                <div class="tags">
+                    <strong>Теги:</strong>
+                    <span onclick="filterBy('tag', 'История')">История</span>
+                    <span onclick="filterBy('tag', 'Роман')">Роман</span>
+                </div>
+                
+                <div class="description">
+                    <p>«Унесённые ветром» — роман американской писательницы Маргарет Митчелл, опубликованный в 1936 году. Это грандиозная эпопея, в которой история любви разворачивается на фоне Гражданской войны в США и последующей Реконструкции. Главная героиня — Скарлетт О'Хара, упрямая, страстная, сильная женщина, готовая бороться за свою землю и благополучие любой ценой.</p>
+                    <p>Скарлетт — представительница южной аристократии, чья беззаботная жизнь рушится с началом войны. Она переживает смерть близких, нищету, предательство, но каждый раз поднимается, проявляя невероятную силу характера. Её отношения с Реттом Батлером — харизматичным, прагматичным мужчиной — наполнены страстью, конфликтами, недопониманием и трагизмом. Эти двое сильных людей не могут найти путь друг к другу, несмотря на любовь.</p>
+                </div>
+                
+                <div class="rating">
+                    <strong>Рейтинг:</strong>
+                    9.1
+                </div>
+                <div class="rating">
+                    <strong>Просмотры:</strong>
+                    5.4k
+                </div>
+            </div>
+        </div>
+        
+        <div class="chapter-selection">
+            <h3>Начните чтение</h3>
+            <div class="chapters">
+                <div class="chapter" onclick="readChapter('chapter1')">
+                    <h4>Глава 1. Никогда не разговаривайте с неизвестными</h4>
+                    <p>В жаркий весенний закат на Патриарших прудах появляются двое литераторов и загадочный иностранец.</p>
+                </div>
+                <div class="chapter" onclick="readChapter('chapter13')">
+                    <h4>Глава 13. Явление героя</h4>
+                    <p>Маргарита читает рукопись Мастера, а Иван Бездомный знакомится с таинственным соседом по клинике.</p>
+                </div>
+                <div class="chapter" onclick="readChapter('chapter32')">
+                    <h4>Глава 32. Прощение и вечный приют</h4>
+                    <p>Финал истории Мастера и Маргариты, где они получают свою награду.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="logo"><a href="../index.html">BookReader</a></div>
+    <div class="footer-links">
+        <a href="../diagramma.html">Диаграммы</a>
+        <a href="../bookreader_onas.html">О нас</a>
+        <a href="../bookreader_politic.html">Политика конфиденциальности</a>
+        <a href="../bookreader_sogla.html">Пользовательское соглашение</a>
+    </div>
+</footer>
+
+<script src="book_4.js"></script>
+
+</body>
+</html>
